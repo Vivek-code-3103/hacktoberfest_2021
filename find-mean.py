@@ -1,11 +1,15 @@
-def cariMean(num):
-    n       = len(num)
-    jumlah  = sum(num)
-    mean    = jumlah / n
-    return mean
+print("Input some integers to calculate their sum and average. Input 0 to exit.")
 
-data_thn_2017 = [31250,25000,17050,17050,16000,14050,11150,9500,4750,4550]
+count = 0
+sum = 0.0
+number = 1
 
-print(cariMean(data_thn_2017))
+while number != 0:
+	number = int(input(""))
+	sum = sum + number
+	count += 1
 
-#output = 15035.0
+if count == 0:
+	print("Input some numbers")
+else:
+	print("Average and Sum of the above numbers are: ", sum / (count-1), sum)
